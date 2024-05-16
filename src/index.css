@@ -1,0 +1,214 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid #646cff;
+  color: #646cff;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: inherit;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: rgb(9, 9, 9);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+
+.react-flow__node.selected {
+  border: solid 3px rgb(15, 15, 16);
+  border-radius: 7px;
+}
+
+.react-flow__node {
+  border: solid 2px black;
+}
+
+.appflow .rightbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #464646;
+  width: 30%;
+}
+
+
+.savingChange {
+  font-size: 12px;
+  background: #fcfcfc;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #464646;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid grey;
+}
+
+
+.topbar {
+  font-size: 12px;
+  background-color: #464646;
+  padding: 12px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  border-bottom: 2px solid grey;
+}
+
+
+.update {
+  padding: 5px 15px;
+  font-size: 12px;
+  background: #fcfcfc;
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.update textarea {
+  background-color: #ffffff;
+  color: #0d0d0e;
+  border: solid 1px #0d0d0e;
+}
+
+.update .back {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+
+.redMessage {
+  color: black;
+  background: lightcoral;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.greenMessage {
+  color: black;
+  background: lightgreen;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+
+.appflow {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  height: 50%;
+}
+
+.appflow aside {
+  padding: 15px 10px;
+  font-size: 12px;
+  background: #ffffff;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #ffffff;
+  display: flex;
+}
+
+.appflow .description {
+  margin: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.appflow .appnode {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #fffcfc;
+  border: 1px solid #646cff;
+  color: #646cff;
+  cursor: grab;
+  transition: border-color 0.25s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90px;
+}
+
+.appnode:hover {
+  border-color: #0d0d0e;
+}
+.appnode:focus,
+.appnode:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.appflow .reactflow-wrapper {
+  flex-grow: 1;
+  height: 89%;
+}
+
+.appflow .selectall {
+  margin-top: 10px;
+}
+
+.appflow .rightbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 30%;
+  border: solid 1px rgb(48, 45, 45);
+}
+
+@media screen and (min-width: 768px) {
+  .appflow {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .rightbar {
+    width: 20%;
+    max-width: 250px;
+  }
+}
